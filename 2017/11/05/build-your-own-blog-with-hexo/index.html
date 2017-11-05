@@ -89,7 +89,7 @@
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://superpmonkey.github.io/images/pasted-0.png">
 <meta property="og:image" content="https://superpmonkey.github.io/images/pasted-1.png">
-<meta property="og:updated_time" content="2017-11-04T18:09:53.011Z">
+<meta property="og:updated_time" content="2017-11-05T06:50:24.113Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="build blog with hexo">
 <meta name="twitter:description" content="Install HexoSEE Hexo: https://hexo.io/zh-cn/index.htmltips: npm install -g npm Error: https://github.com/npm/npm/issues/10010 NexT theme &amp;amp; configSEE NexT: http://theme-next.iissnan.com/getting-sta">
@@ -399,9 +399,12 @@
 <p>6.A separate API Key must be provided as an environment variable named HEXO_ALGOLIA_INDEXING_KEY<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ export HEXO_ALGOLIA_INDEXING_KEY=Your Api Key</div><div class="line">$ ./node_modules/.bin/hexo algolia</div></pre></td></tr></table></figure></p>
 <p>7.SEE: <a href="https://www.npmjs.com/package/hexo-algolia" target="_blank" rel="external">https://www.npmjs.com/package/hexo-algolia</a></p>
 <h4 id="Comment"><a href="#Comment" class="headerlink" title="Comment"></a>Comment</h4><p>SEE Hypercomments: <a href="https://www.hypercomments.com/" target="_blank" rel="external">https://www.hypercomments.com/</a>  </p>
-<h4 id="Deploy-to-github-io"><a href="#Deploy-to-github-io" class="headerlink" title="Deploy to github.io"></a>Deploy to github.io</h4><p>1.config <code>_config.yml</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># Deployment</div><div class="line">## Docs: https://hexo.io/docs/deployment.html</div><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repository: https://github.com/YourName/YourName.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
-<p>2.if you use hexo-admin,you can add a deploy script <code>hexo-deploy.sh</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">#!/usr/bin/env sh</div><div class="line">hexo g</div><div class="line">hexo deploy</div></pre></td></tr></table></figure></p>
-<p>3.update config <code>_config.yml</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># hexo-admin authentification</div><div class="line">admin:</div><div class="line">  username: YourName</div><div class="line">  password_hash: YourPwd</div><div class="line">  secret: YourSecret</div><div class="line">  deployCommand: &apos;./hexo-deploy.sh&apos;</div></pre></td></tr></table></figure></p>
+<h4 id="Deploy-to-github-io"><a href="#Deploy-to-github-io" class="headerlink" title="Deploy to github.io"></a>Deploy to github.io</h4><p>1.update <code>_config.yml</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># Deployment</div><div class="line">## Docs: https://hexo.io/docs/deployment.html</div><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repository: https://github.com/YourName/YourName.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
+<p>2.if you use hexo-admin,you can add a deploy script <code>hexo-deploy.sh</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">#!/usr/bin/env sh</div><div class="line">hexo g</div><div class="line">hexo deploy</div></pre></td></tr></table></figure>
+<p>3.update <code>_config.yml</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># hexo-admin authentification</div><div class="line">admin:</div><div class="line">  username: YourName</div><div class="line">  password_hash: YourPwd</div><div class="line">  secret: YourSecret</div><div class="line">  deployCommand: &apos;./hexo-deploy.sh&apos;</div></pre></td></tr></table></figure>
 <h4 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h4><p><a href="https://github.com/jaredly/hexo-admin/issues/70" target="_blank" rel="external">https://github.com/jaredly/hexo-admin/issues/70</a><br><a href="https://reuixiy.github.io/technology/computer/computer-aided-art/2017/06/09/hexo-next-optimization.html" target="_blank" rel="external">https://reuixiy.github.io/technology/computer/computer-aided-art/2017/06/09/hexo-next-optimization.html</a><br><a href="https://github.com/npm/npm/issues/10010" target="_blank" rel="external">https://github.com/npm/npm/issues/10010</a><br><a href="https://ask.helplib.com/linux/post_60421" target="_blank" rel="external">https://ask.helplib.com/linux/post_60421</a></p>
 
       
@@ -790,15 +793,15 @@
       function renderGitment(){
         var gitment = new Gitment({
             id: window.location.pathname, 
-            owner: 'superPMonkey',
-            repo: 'superpmonkey.github.io',
+            owner: 'cndotaer',
+            repo: 'cndotaer.github.io',
             
             oauth: {
             
             
-                client_secret: 'c9e05474440998ca77053c38fbe67472663c5bdd',
+                client_secret: 'ec1bacc2a8db5a2ae71c1613ec05747eec5301c8',
             
-                client_id: '15294a0a6c62f6da1ab0'
+                client_id: 'f95b808093dcb4fe5eb5'
             }});
         gitment.render('gitment-container');
       }
