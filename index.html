@@ -412,9 +412,10 @@
                         <p>第二步完成之,访问 <a href="http://localhost:8080" target="_blank" rel="noopener">http://localhost:8080</a> ,登录系统</p>
                       </li>
                     </ol>
-                    <p><img src="/post_images/jenkins_home.jpg" alt="jenkins_home"></p>
-                    <h2 id="点击Credentials菜单出现异常java-lang-AssertionError-InstanceIdentity-is-missing-its-singleton"><a href="#点击Credentials菜单出现异常java-lang-AssertionError-InstanceIdentity-is-missing-its-singleton" class="headerlink" title="点击Credentials菜单出现异常java.lang.AssertionError: InstanceIdentity is missing its singleton:"></a>点击Credentials菜单出现异常<code>java.lang.AssertionError: InstanceIdentity is missing its singleton</code>:</h2>
-                    <p><img src="/post_images/jenkins_Credentials_error.jpg" alt="jenkins_Credentials_error"></p>
+                    <!--![jenkins_home](/post_images/jenkins_home.jpg)-->
+                    <h3 id="点击Credentials菜单出现异常"><a href="#点击Credentials菜单出现异常" class="headerlink" title="点击Credentials菜单出现异常"></a>点击Credentials菜单出现异常</h3>
+                    <p><code>java.lang.AssertionError: InstanceIdentity is missing its singleton</code>:</p>
+                    <!--![jenkins_Credentials_error](/post_images/jenkins_Credentials_error.jpg)-->
                     <p>解决方法:</p>
                     <blockquote>
                       <p>1.在终端中用su登录,<a href="https://support.apple.com/zh-cn/HT204012" target="_blank" rel="noopener">点这里查看如何开启</a></p>
@@ -456,9 +457,9 @@
                     <blockquote>
                       <p>4.启动Jenkins:<code>launchctl load /Library/LaunchDaemons/org.jenkins-ci.plist</code></p>
                       <p>5.访问 <a href="http://localhost:8080" target="_blank" rel="noopener">http://localhost:8080</a> ,重新登录系统</p>
-                      <p><img src="/post_images/jenkins_credentials.jpg" alt="jenkins_credentials"></p>
+                      <!--![jenkins_credentials](/post_images/jenkins_credentials.jpg)-->
                     </blockquote>
-                    <h2 id="Using-the-CLI-client"><a href="#Using-the-CLI-client" class="headerlink" title="Using the CLI client"></a>Using the CLI client</h2>
+                    <h3 id="Using-the-CLI-client"><a href="#Using-the-CLI-client" class="headerlink" title="Using the CLI client"></a>Using the CLI client</h3>
                     <ol>
                       <li>访问<a href="http://localhost:8080/me/configure" target="_blank" rel="noopener">http://localhost:8080/me/configure</a> 查看当前用户的API Token</li>
                       <li>访问<a href="http://localhost:8080/cli/" target="_blank" rel="noopener">http://localhost:8080/cli/</a> 查看相关命令</li>

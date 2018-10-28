@@ -81,21 +81,17 @@
 
 
 
-  <meta name="description" content="安装 Jenkins    自己安装Jenkins时的一些问题记录一下          从官网下载Max OS X版安装包           点击安装包安装,先按照提示设置密码和安装推荐插件           第二步完成之,访问 http://localhost:8080 ,登录系统      点击Credentials菜单出现异常java.lang.AssertionError: Inst">
+  <meta name="description" content="安装 Jenkins    自己安装Jenkins时的一些问题记录一下          从官网下载Max OS X版安装包           点击安装包安装,先按照提示设置密码和安装推荐插件           第二步完成之,访问 http://localhost:8080 ,登录系统      点击Credentials菜单出现异常 java.lang.AssertionError: Ins">
   <meta property="og:type" content="article">
   <meta property="og:title" content="在Mac上使用Jenkins">
   <meta property="og:url" content="https://cuichaoyang.github.io/2018/01/20/在Mac上使用Jenkins/index.html">
   <meta property="og:site_name" content="Java - Eric">
-  <meta property="og:description" content="安装 Jenkins    自己安装Jenkins时的一些问题记录一下          从官网下载Max OS X版安装包           点击安装包安装,先按照提示设置密码和安装推荐插件           第二步完成之,访问 http://localhost:8080 ,登录系统      点击Credentials菜单出现异常java.lang.AssertionError: Inst">
+  <meta property="og:description" content="安装 Jenkins    自己安装Jenkins时的一些问题记录一下          从官网下载Max OS X版安装包           点击安装包安装,先按照提示设置密码和安装推荐插件           第二步完成之,访问 http://localhost:8080 ,登录系统      点击Credentials菜单出现异常 java.lang.AssertionError: Ins">
   <meta property="og:locale" content="zh-Hans">
-  <meta property="og:image" content="https://cuichaoyang.github.io/post_images/jenkins_home.jpg">
-  <meta property="og:image" content="https://cuichaoyang.github.io/post_images/jenkins_Credentials_error.jpg">
-  <meta property="og:image" content="https://cuichaoyang.github.io/post_images/jenkins_credentials.jpg">
-  <meta property="og:updated_time" content="2018-01-21T07:11:36.495Z">
+  <meta property="og:updated_time" content="2018-10-28T07:25:24.327Z">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="在Mac上使用Jenkins">
-  <meta name="twitter:description" content="安装 Jenkins    自己安装Jenkins时的一些问题记录一下          从官网下载Max OS X版安装包           点击安装包安装,先按照提示设置密码和安装推荐插件           第二步完成之,访问 http://localhost:8080 ,登录系统      点击Credentials菜单出现异常java.lang.AssertionError: Inst">
-  <meta name="twitter:image" content="https://cuichaoyang.github.io/post_images/jenkins_home.jpg">
+  <meta name="twitter:description" content="安装 Jenkins    自己安装Jenkins时的一些问题记录一下          从官网下载Max OS X版安装包           点击安装包安装,先按照提示设置密码和安装推荐插件           第二步完成之,访问 http://localhost:8080 ,登录系统      点击Credentials菜单出现异常 java.lang.AssertionError: Ins">
 
 
 
@@ -412,9 +408,10 @@
                         <p>第二步完成之,访问 <a href="http://localhost:8080" target="_blank" rel="noopener">http://localhost:8080</a> ,登录系统</p>
                       </li>
                     </ol>
-                    <p><img src="/post_images/jenkins_home.jpg" alt="jenkins_home"></p>
-                    <h2 id="点击Credentials菜单出现异常java-lang-AssertionError-InstanceIdentity-is-missing-its-singleton"><a href="#点击Credentials菜单出现异常java-lang-AssertionError-InstanceIdentity-is-missing-its-singleton" class="headerlink" title="点击Credentials菜单出现异常java.lang.AssertionError: InstanceIdentity is missing its singleton:"></a>点击Credentials菜单出现异常<code>java.lang.AssertionError: InstanceIdentity is missing its singleton</code>:</h2>
-                    <p><img src="/post_images/jenkins_Credentials_error.jpg" alt="jenkins_Credentials_error"></p>
+                    <!--![jenkins_home](/post_images/jenkins_home.jpg)-->
+                    <h3 id="点击Credentials菜单出现异常"><a href="#点击Credentials菜单出现异常" class="headerlink" title="点击Credentials菜单出现异常"></a>点击Credentials菜单出现异常</h3>
+                    <p><code>java.lang.AssertionError: InstanceIdentity is missing its singleton</code>:</p>
+                    <!--![jenkins_Credentials_error](/post_images/jenkins_Credentials_error.jpg)-->
                     <p>解决方法:</p>
                     <blockquote>
                       <p>1.在终端中用su登录,<a href="https://support.apple.com/zh-cn/HT204012" target="_blank" rel="noopener">点这里查看如何开启</a></p>
@@ -456,9 +453,9 @@
                     <blockquote>
                       <p>4.启动Jenkins:<code>launchctl load /Library/LaunchDaemons/org.jenkins-ci.plist</code></p>
                       <p>5.访问 <a href="http://localhost:8080" target="_blank" rel="noopener">http://localhost:8080</a> ,重新登录系统</p>
-                      <p><img src="/post_images/jenkins_credentials.jpg" alt="jenkins_credentials"></p>
+                      <!--![jenkins_credentials](/post_images/jenkins_credentials.jpg)-->
                     </blockquote>
-                    <h2 id="Using-the-CLI-client"><a href="#Using-the-CLI-client" class="headerlink" title="Using the CLI client"></a>Using the CLI client</h2>
+                    <h3 id="Using-the-CLI-client"><a href="#Using-the-CLI-client" class="headerlink" title="Using the CLI client"></a>Using the CLI client</h3>
                     <ol>
                       <li>访问<a href="http://localhost:8080/me/configure" target="_blank" rel="noopener">http://localhost:8080/me/configure</a> 查看当前用户的API Token</li>
                       <li>访问<a href="http://localhost:8080/cli/" target="_blank" rel="noopener">http://localhost:8080/cli/</a> 查看相关命令</li>
@@ -670,9 +667,12 @@
 
                 <div class="post-toc-content">
                   <ol class="nav">
-                    <li class="nav-item nav-level-2"><a class="nav-link" href="#安装-Jenkins"><span class="nav-number">1.</span> <span class="nav-text">安装 Jenkins</span></a></li>
-                    <li class="nav-item nav-level-2"><a class="nav-link" href="#点击Credentials菜单出现异常java-lang-AssertionError-InstanceIdentity-is-missing-its-singleton"><span class="nav-number">2.</span> <span class="nav-text">点击Credentials菜单出现异常java.lang.AssertionError: InstanceIdentity is missing its singleton:</span></a></li>
-                    <li class="nav-item nav-level-2"><a class="nav-link" href="#Using-the-CLI-client"><span class="nav-number">3.</span> <span class="nav-text">Using the CLI client</span></a></li>
+                    <li class="nav-item nav-level-2"><a class="nav-link" href="#安装-Jenkins"><span class="nav-number">1.</span> <span class="nav-text">安装 Jenkins</span></a>
+                      <ol class="nav-child">
+                        <li class="nav-item nav-level-3"><a class="nav-link" href="#点击Credentials菜单出现异常"><span class="nav-number">1.1.</span> <span class="nav-text">点击Credentials菜单出现异常</span></a></li>
+                        <li class="nav-item nav-level-3"><a class="nav-link" href="#Using-the-CLI-client"><span class="nav-number">1.2.</span> <span class="nav-text">Using the CLI client</span></a></li>
+                      </ol>
+                    </li>
                   </ol>
                 </div>
 
