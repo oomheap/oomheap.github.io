@@ -18,7 +18,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="categories" />
   <meta property="og:description" content="" />
-  <meta property="og:locale" content="zh-Hans" />
+  <meta property="og:locale" content="cn" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://cuichaoyang.github.io/categories/index.html" />
   <meta property="og:site_name" content="Kratzer" />
@@ -76,13 +76,13 @@
                 repo: "cuichaoyang.github.io",
                 owner: "cuichaoyang",
                 admin: ["cuichaoyang",],
-                distractionFreeMode: true  // Facebook-like distraction free mode
+                distractionFreeMode: false  // Facebook-like distraction free mode
             },
             
             
             
         }
-        window.aomori_logo_typed_animated = false
+        window.aomori_logo_typed_animated = true
         window.aomori_search_algolia = true
 
     </script>
@@ -103,7 +103,10 @@
 
         <div class="header-type-inner">
 
-          <a class="header-type-title" href="/">HelloWorld</a>
+          <div id="typed-strings" style="display:none">
+            <p>HelloWorld</p>
+          </div>
+          <a class="header-type-title" id="typed" href="/"></a>
 
 
 
